@@ -6,7 +6,8 @@ namespace Tyuiu.MarakovAD.Sprint5.Task4.V7.Lib
         public double LoadFromDataFile(string path)
         {
             string strX = File.ReadAllText(path);
-            double x = Convert.ToDouble(strX);
+            string fun = strX.Replace('.', ',');
+            double x = Convert.ToDouble(fun);
             double res = Math.Round((1/Math.Cos(x)) + Math.Pow(x, 3), 3);
             return res;
         }
