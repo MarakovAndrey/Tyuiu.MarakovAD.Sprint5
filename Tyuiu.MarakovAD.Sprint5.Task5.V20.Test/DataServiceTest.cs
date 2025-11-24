@@ -1,5 +1,5 @@
-﻿using Tyuiu.MarakovAD.Sprint5.Task4.V7.Lib;
-namespace Tyuiu.MarakovAD.Sprint5.Task4.V7.Test
+﻿using Tyuiu.MarakovAD.Sprint5.Task5.V20.Lib;
+namespace Tyuiu.MarakovAD.Sprint5.Task5.V20.Test
 {
     [TestClass]
     public sealed class DataServiceTest
@@ -8,7 +8,7 @@ namespace Tyuiu.MarakovAD.Sprint5.Task4.V7.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            string path = "C:/DataSprint5/InPutDataFileTask4V7.txt";
+            string path = "С:/DataSprint5/InPutDataFileTask5V20.txt";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             Assert.AreEqual(true, fileExists);
