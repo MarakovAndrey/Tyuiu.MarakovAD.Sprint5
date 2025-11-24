@@ -7,7 +7,7 @@ namespace Tyuiu.MarakovAD.Sprint5.Task4.V7.Lib
         {
             string strX = File.ReadAllText(path);
             double x = Convert.ToDouble(strX);
-            double res = Math.Round((1/Math.Cos(-1.39)) + Math.Pow(-1.39, 3), 3);
+            double res = Math.Round((1/Math.Cos(x)) + Math.Pow(x, 3), 3);
             return res;
         }
     }
