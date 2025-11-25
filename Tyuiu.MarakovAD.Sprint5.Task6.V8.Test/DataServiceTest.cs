@@ -8,7 +8,7 @@ namespace Tyuiu.MarakovAD.Sprint5.Task6.V8.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            string path = "С:/DataSprint5/InPutDataFileTask6V8.txt";
+            string path = "C:/DataSprint5/InPutDataFileTask6V8.txt";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             Assert.AreEqual(true, fileExists);
